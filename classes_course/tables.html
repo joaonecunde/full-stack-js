@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables on HTML</title>
+</head>
+<body>
+    <h1>Creation of Tables on HTML</h1>
+
+    <table border="1"> <!--Elemento table para criar tabelas-->
+        <tr> <!--tr para criar as linhas-->
+            <th>Column 1</th> <!--th para criar o título das colunas-->
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td> <!--td para criar o conteúdo das linhas da colunas-->
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Tables with Header</h2>
+
+    <table border="1">
+        <thead> <!--thead é o nosso cabeçalho da tabela-->
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Profession</th>
+            </tr>
+        </thead>
+        <tbody> <!--tbody é o nosso corpo da tabela-->
+            <tr>
+                <td>João</td>
+                <td>30</td>
+                <td>Engineer</td>
+            </tr>
+    
+            <tr>
+                <td>Maria</td>
+                <td>25</td>
+                <td>Advocate</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>Tables with Personalized Cells</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Personal Infomations</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name:</td>
+                <td>João</td>
+                <td rowspan="1">Contact: 123456789</td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
