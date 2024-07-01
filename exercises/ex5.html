@@ -1,0 +1,81 @@
+<!--
+Crie um arquivo HTML com um formulário de inscrição contendo os seguintes campos:
+1- Nome, que deve ser um input de texto
+2- Email, que deve ser um input de email
+3- WhatsApp, que deve ser um input de telefone
+4- Área de atuação, que deve ser um input de radio com as opções: Desenvolvimento, Quality Assurance (QA), Análise de Dados e Infraestrutura
+5- Observações, que deve ser uma textarea
+6- Uma checkbox com o rótulo “Desejo receber novidades e ofertas por email.”
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subscription Form</title>
+    </head>
+    <body>
+        <h1>Subscription Form</h1>
+
+        <form action="#" method="post">
+            <!--Ask name-->
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+                <!--Ask E-mail-->
+            <div>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <br>
+
+            <div>
+                <!--Ask WhatsApp-->
+                <label for="wpp">WhatsApp:</label><br>
+                <input type="tel" id="wpp" name="wpp" required>
+            </div>
+            
+            <br>
+            
+            <div>
+                <!--Select Acting Area-->
+                <label>Acting Area:</label><br><br>
+                <input type="radio" name="area" id="Development" value="Development">
+                <label for="Development">Development</label>
+
+                <input type="radio" name="area" id="Quality Assurance(Q&A)" value="Quality Assurance(Q&A)">
+                <label for="Quality Assurance(Q&A)">Quality Assurance(Q&A)</label>
+                
+                <input type="radio" name="area" id="Data Analysis" value="Data Analysis">
+                <label for="Data Analysis">Data Analysis</label>
+                
+                <input type="radio" name="area" id="Infrastructure" value="Infrastructure">
+                <label for="Infrastructure">Infrastructure</label>
+            </div>
+
+            <br>
+
+            <div>
+                <!--Observations-->
+                <label for="observations">Observations:</label><br>
+                <textarea name="observations" id="observations" cols="20" rows="2"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <!--Checkbox-->
+                <input type="checkbox" id="label" value="I would like to receive news and offers by email." name="label">
+                <label for="label">I would like to receive news and offers by email.</label>
+            </div>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+        
+    </body>
+</html>
